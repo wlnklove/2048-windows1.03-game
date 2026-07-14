@@ -2,7 +2,7 @@
 一款复古移植数字小游戏，为古老 Windows 1.03 系统打造✨
 
 ## 🖥 运行平台
-原生适配 Windows 1.03，兼容 Win2.x；Win3及以上需开启兼容模式，Win10/11 可搭配 [OTVDM](https://github.com/otya128/winevdm) 模拟器运行。
+原生适配 Windows 1.03，兼容 Win2.x；Win3及以上需开启兼容模式，Win10/11 可搭配 [OTVDM](https://github.com/otya128/winevdm) 兼容层运行。
 
 ## 🎮 游戏玩法
 经典4×4方格2048数字合并游戏：
@@ -28,7 +28,7 @@
 A retro puzzle game natively built for ancient Windows 1.03 ✨
 
 ## 🖥 Supported Platforms
-Made for Windows 1.03, compatible with Windows 2.x. Compatibility mode required for Windows 3+. Use OTVDM runtime to launch on Windows 10/11.
+Made for Windows 1.03, compatible with Windows 2.x. Compatibility mode required for Windows 3+. Use [OTVDM](https://github.com/otya128/winevdm)  runtime to launch on Windows 10/11.
 
 ## 🎮 Gameplay
 Classic 4×4 grid 2048 merge puzzle:
