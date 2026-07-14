@@ -15,7 +15,12 @@
 兼顾复古硬件限制，优化画面渲染逻辑，解决低色深画面颗粒、棋盘错位、缩放异常等视觉问题，程序运行稳定无资源泄露。
 
 ## 📥 获取游戏
-[下载游戏程序]
+[下载 16 色 品红背景](https://github.com/wlnklove/2048-windows1.03-game/releases/download/v2_1/2048E.EXE)
+[下载 256 色 浅灰背景（ega 抖动色）](https://github.com/wlnklove/2048-windows1.03-game/releases/download/v2_1/2048V.EXE)
+
+## 平台说明
+- 256色显卡im1024会有闪烁现象（好难修）
+- 其余平台没有闪烁现象（包含Windows2.0的256色驱动）
 
 ---
 
@@ -36,4 +41,9 @@ Lots of vintage Windows-specific bugs were fixed during development: wrong varia
 Graphics rendering optimized for old hardware limits, fixes grainy visuals, misaligned board and scaling bugs, stable runtime without resource leaks.
 
 ## 📥 Download Game
-[Download Executable]()
+[Download 16-color mode: Magenta background](https://github.com/wlnklove/2048-windows1.03-game/releases/download/v2_1/2048E.EXE)
+[Download 256-color mode: Light gray background (EGA dithered tone)](https://github.com/wlnklove/2048-windows1.03-game/releases/download/v2_1/2048V.EXE)
+
+## Platform Notes
+- IM1024 256-color graphics cards will display screen flicker (this issue is quite tricky to fix)
+- All other platforms are flicker-free, including Windows 2’s 256-color display drivers
