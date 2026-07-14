@@ -47,3 +47,12 @@ Graphics rendering optimized for old hardware limits, fixes grainy visuals, misa
 ## Platform Notes
 - IM1024 256-color graphics cards will display screen flicker (this issue is quite tricky to fix)
 - All other platforms are flicker-free, including Windows 2’s 256-color display drivers
+
+## 📸 游戏截图
+
+![win1.0颜色对比](img/对比.gif)
+![256色](img/256色.gif)
+![窗口运行](img/窗口运行.gif)
+![分数版](img/分数版.gif)
+![分数版2](img/分数版2.gif)
+![退出提醒](img/退出提醒.gif)
