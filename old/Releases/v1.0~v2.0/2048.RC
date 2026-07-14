@@ -1,0 +1,55 @@
+/* 2048.RC – 资源定义（Windows 1.03 兼容） */
+#include "windows.h"
+#include "2048.h"
+AppIcon ICON q2048.ico
+
+/* 菜单栏 */
+GAME_MENU MENU
+BEGIN
+    POPUP "Game"
+    BEGIN
+	MENUITEM "New Game\tN", IDM_NEWGAME
+		MENUITEM "Save",        IDM_SAVE
+		MENUITEM SEPARATOR  /* 分隔线，视觉分隔 */
+		MENUITEM "Scoreboard", IDM_SCOREBOARD
+    END
+    POPUP "Help"
+    BEGIN
+	MENUITEM "How to Play", IDM_HOWTOPLAY
+	MENUITEM "About...",       IDM_ABOUT
+    END
+END
+
+/* 关于对话框 */
+DLG_ABOUT DIALOG 22, 17, 144, 75
+STYLE WS_POPUP | WS_DLGFRAME
+BEGIN
+    ICON "AppIcon", -1, 10, 18, 32, 32          /* 图标：左对齐，垂直居中 */
+    CTEXT "yuanyuan xia",   -1, 45,  5, 94, 10
+    CTEXT "Version 1.2",    -1, 45, 20, 94, 10
+    CTEXT "Windows 1.x Platform", -1, 45, 35, 94, 10
+    DEFPUSHBUTTON "OK", IDOK, 56, 55, 32, 14, WS_GROUP
+END
+
+/* 玩法说明对话框 */
+DLG_HOWTOPLAY DIALOG 22, 17, 280, 150
+STYLE WS_POPUP | WS_DLGFRAME
+BEGIN
+    CTEXT "How to Play 2048",        -1, 0,   8, 280, 14
+    CTEXT "Use arrow keys to move the tiles.",    -1, 10, 28, 260, 12
+    CTEXT "When two tiles with the same number",  -1, 10, 44, 260, 12
+    CTEXT "touch, they merge into one!",          -1, 10, 60, 260, 12
+    CTEXT "Keep merging to reach 2048!",          -1, 10, 76, 260, 12
+    CTEXT "Good luck and have a purr-fect game! ^_^", -1, 10, 96, 260, 12
+    CTEXT "- With love from Yuanyuan Xia <3",     -1, 10, 112, 260, 12
+    DEFPUSHBUTTON "OK", IDOK, 120, 128, 40, 14, WS_GROUP
+END
+
+/* 分数对话框 */
+DLG_SCOREBOARD DIALOG 25, 20, 200, 150
+STYLE WS_POPUP | WS_DLGFRAME
+BEGIN
+    CTEXT "Scoreboard", -1, 0, 5, 200, 10
+    EDITTEXT IDC_SCOREBOARD_EDIT, 10, 20, 180, 100, WS_CHILD | WS_VISIBLE | WS_BORDER | ES_MULTILINE | ES_AUTOVSCROLL
+    DEFPUSHBUTTON "OK", IDOK, 80, 130, 40, 14
+END
